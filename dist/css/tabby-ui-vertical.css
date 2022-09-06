@@ -1,7 +1,7 @@
 /*!
  * tabbyjs v12.0.3
  * Lightweight, accessible vanilla JS toggle tabs.
- * (c) 2019 Chris Ferdinandi
+ * (c) 2022 Chris Ferdinandi
  * MIT License
  * http://github.com/cferdinandi/tabby
  */
@@ -9,40 +9,36 @@
 /**
  * The list element
  */
-[role="tablist"] {
+[role=tablist] {
   border-bottom: 1px solid lightgray;
   list-style: none;
   margin: 0;
   padding: 0;
 }
-
-[role="tablist"] * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+[role=tablist] * {
+  box-sizing: border-box;
 }
 
 /**
  * The tabs
  */
-[role="tab"] {
+[role=tab] {
   border: 1px solid transparent;
   border-top-color: lightgray;
   display: block;
   padding: 0.5em 1em;
   text-decoration: none;
   /**
-	 * Active tabs
-	 */
+   * Active tabs
+   */
   /**
-	 * Hovered tabs
-	 */
+   * Hovered tabs
+   */
 }
-
-[role="tab"][aria-selected="true"] {
+[role=tab][aria-selected=true] {
   background-color: lightgray;
 }
-
-[role="tab"]:hover:not([aria-selected="true"]) {
+[role=tab]:hover:not([aria-selected=true]) {
   background-color: #f7f7f7;
 }
 
